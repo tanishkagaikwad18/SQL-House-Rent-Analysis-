@@ -70,9 +70,7 @@ An end-to-end SQL analysis of **4,746 rental listings across 6 Indian cities** (
 
 ## How AI helped, and where it was wrong
 
-I used **Claude** to plan the cleaning steps, draft the SQL (floor parsing, outlier flagging with CTEs and window functions, analysis queries) and explain errors. I ran each query myself, checked row counts and result grids, and debugged errors as they appeared.
-
-**One thing the AI got wrong:** the first version of the `INSERT` script that loaded `listings_clean` assumed my raw table already had snake_case column names (`posted_on`, `floor_text`). My import had kept the original CSV headers (`Posted On`, `Floor`), so the query failed with an "unknown column" error. I ran `DESCRIBE listings_raw` to see the real column names, diagnosed the mismatch, and renamed the columns before rerunning.
+One thing the AI got wrong: Claude’s first INSERT script for listings_clean assumed snake_case column names (posted_on, floor_text), but my import kept the original CSV headers (Posted On, Floor), so it failed with an “unknown column” error. I ran DESCRIBE listings_raw to see the real names, fixed the mismatch, and reran. Since then, I check the actual table schema before running any AI-written query.
 
 ---
 
