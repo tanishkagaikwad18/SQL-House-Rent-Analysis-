@@ -2,7 +2,7 @@
 
 An end-to-end SQL analysis of **4,746 rental listings across 6 Indian cities** (Mumbai, Delhi, Bangalore, Chennai, Hyderabad, Kolkata), posted between April and July 2022. I cleaned messy text fields, flagged price outliers, and answered seven business-style questions about rent, furnishing, locations and who lists the properties.
 
-**Dataset:** House Rent Prediction dataset (Kaggle) – [add link here]
+**Dataset:** House Rent Prediction dataset (Kaggle) – https://www.kaggle.com/datasets/iamsouravbanerjee/house-rent-prediction-dataset?select=House_Rent_Dataset.csv
 **Tools:** MySQL 8, MySQL Workbench, Claude (AI assistant)
 
 ---
