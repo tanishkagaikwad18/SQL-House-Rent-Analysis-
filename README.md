@@ -92,7 +92,6 @@ I used **Claude** to plan the cleaning steps, draft the SQL (floor parsing, outl
 
 ## Next steps
 
-- Build a Power BI dashboard on `listings_clean` with city, BHK and furnishing slicers (planned).
 - Cross-check the key numbers in Excel with a pivot table (planned).
 
 ---
